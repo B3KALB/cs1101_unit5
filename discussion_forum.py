@@ -1,8 +1,9 @@
-yup = "cOULD YOU aPPLY A pRINT STATEMENT?"
-yup2 = "Could you Apply a Print statement?"
+low = "c"
+cap = "C"
 
-print("__#1___")# 1
+print("__#1__")
 
+# 1
 def any_lowercase1(s):
      for c in s:
           if c.islower():
@@ -10,13 +11,15 @@ def any_lowercase1(s):
           else:
                return False
                
-lowercase = any_lowercase1(yup)
-lowercase2 = any_lowercase1(yup2)
+lowercase = any_lowercase1(low)
+lowercase2 = any_lowercase1(cap)
+
 print(lowercase)
 print(lowercase2)
 
-print("__#2___")# 2
+print("__#2__")
 
+# 2
 def any_lowercase2(s):
      for c in s:
           if 'c'.islower():
@@ -24,45 +27,56 @@ def any_lowercase2(s):
           else:
                return 'False'
 
-lowercase = any_lowercase2(yup)
-lowercase2 = any_lowercase2(yup2)
+lowercase = any_lowercase2(low)
+lowercase2 = any_lowercase2(cap)
+
 print(lowercase)
 print(lowercase2)
 
-print("__#3___")# 3
+print("__#3__")
 
+# 3
 def any_lowercase3(s):
      for c in s:
           flag = c.islower()
      return flag
 
-lowercase = any_lowercase3(yup)
-lowercase2 = any_lowercase3(yup2)
+lowercase = any_lowercase3(low)
+lowercase2 = any_lowercase3(cap)
+
 print(lowercase)
 print(lowercase2)
 
-print("__#4___")# 4
+print("__#4__")
 
+# 4
 def any_lowercase4(s):
      flag = False
      for c in s:
           flag = flag or c.islower()
      return flag
 
-lowercase = any_lowercase4(yup)
-lowercase2 = any_lowercase4(yup2)
+lowercase = any_lowercase4(low)
+lowercase2 = any_lowercase4(cap)
+
 print(lowercase)
 print(lowercase2)
 
-print("__#5___")# 5
+print("__#5__")
 
+# 5
 def any_lowercase5(s):
      for c in s:
           if not c.islower():
                return False
      return True
 
-lowercase = any_lowercase5(yup)
-lowercase2 = any_lowercase5(yup2)
+lowercase = any_lowercase5(low)
+lowercase2 = any_lowercase5(cap)
+
 print(lowercase)
 print(lowercase2)
+
+# alt print
+# print("Returns: ", lowercase, " Type is: ", type(lowercase))
+# print("Returns: ", lowercase2, " Type is: ", type(lowercase2))
