@@ -1,13 +1,25 @@
+import math
 # Part 1
 
-# Encapsulate the following Python code from Section 7.5 in a function named my_sqrt that takes a as a parameter, chooses a starting value for x, and returns an estimate of the square root of a. 
-a = "SUPER CODE BRO"
-while True:
-     y = (x + a/x) / 2.0
-     if y == x:
-          break
-     x = y 
+# Encapsulate the following Python code from Section 7.5 in a function named my_sqrt
+#  that takes a as a parameter, chooses a starting value for x, and returns an estimate of the square root of a. 
 
+print('part 1 ')
+print(" ")
+
+def my_sqrt(a, x):
+    while True:
+        y = (x + a/x) / 2.0
+        if y == x:
+            break
+        x = y
+        
+        return abs(x)
+
+print(my_sqrt(4, 3))
+
+print("________________________")
+print(" ")
 
 # Part 2
 
@@ -26,6 +38,28 @@ while True:
 # Modify your program so that it outputs lines for a values from 1 to 25 instead of just 1 to 9. 
 
 # You should submit a script file and a plain text output file (.txt) that contains the test output. Multiple file uploads are permitted.
+
+print('part 2 ')
+print(" ")
+def my_sqrt_abs(a, x):
+    while True:
+        y = (x + a/x) / 2.0
+        if y == x:
+            break
+        x = y
+        
+    return abs(x)
+def test_sqrt(num):
+    
+    count = 1
+   
+    while count < (num + 1):
+        
+        print('a = {} | my_sqrt(a) = {} | math.sqrt(a) = {} | diff = {} '.format(count, my_sqrt_abs(count,1), math.sqrt(count), abs(my_sqrt_abs(count,1)-math.sqrt(count))))
+        
+        count = count + 1
+ 
+test_sqrt(25)
 
 # Your submission will be assessed using the following Aspects.
 
